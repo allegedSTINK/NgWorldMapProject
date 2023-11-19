@@ -1,0 +1,32 @@
+/* .heading {
+  display: grid;
+  gap: 1%;
+  grid-template-areas: 'left right';
+  grid-template-columns: 1fr 2fr;
+  height: 15px;
+}
+.heading * {
+  margin: 0;
+  padding: 0;
+}
+.title {
+ grid-area: left;
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+ border: solid;
+}
+.title p {
+  border: solid;
+}
+.country-card {
+  grid-area: right;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border: solid;
+}
+.country-card ul {
+  columns: 2;
+  list-style-type: none;
+  text-align: left;
+  border: solid;
+} */

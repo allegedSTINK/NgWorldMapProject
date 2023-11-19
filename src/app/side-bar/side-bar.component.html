@@ -1,0 +1,40 @@
+<div 
+class="country-card"
+id="draggableElement"
+(mousedown)="onDragStart($event)"
+(document:mousemove)="onDragging($event)"
+(document:mouseup)="onDragEnd()"
+[ngStyle]="{ left: posX + 'px', top: posY + 'px', cursor: isDragging ? 'grabbing' : 'grab' }"
+>
+  <table class="country-data">
+    <thead>
+      <th colspan="2">Country Data</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>{{ data.cName }}</td>
+      </tr>
+      <tr>
+        <td>Capital</td>
+        <td>{{ data.cCapital }}</td>
+      </tr>
+      <tr>
+        <td>Region</td>
+        <td>{{ data.cRegion }}</td>
+      </tr>
+      <tr>
+        <td>Income</td>
+        <td>{{ data.cIncome }}</td>
+      </tr>
+      <tr>
+        <td>Latitude</td>
+        <td>{{ data.cLatitude }}</td>
+      </tr>
+      <tr>
+        <td>Longitude</td>
+        <td>{{ data.cLongitude }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
